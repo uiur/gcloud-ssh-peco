@@ -1,4 +1,6 @@
 #!/bin/bash -e
+# Usage:
+#   gcloud-ssh-peco [user]
 user=$1
 
 instance=($(gcloud compute instances list | peco --initial-index 1))
