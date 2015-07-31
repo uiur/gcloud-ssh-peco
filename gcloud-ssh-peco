@@ -1,0 +1,10 @@
+#!/bin/bash -e
+user=$1
+
+instance=($(gcloud compute instances list | peco --initial-index 1))
+name=${instance[0]}
+zone=${instance[1]}
+
+[[ -n $user ]] && host="$user@$name" || host="$name"
+
+gcloud compute ssh $host --zone "$zone"
