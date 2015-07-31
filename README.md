@@ -8,7 +8,7 @@ gcloud-ssh-peco user # To specify ssh user
 
 ![](https://i.gyazo.com/abeb8394cd05670c5cfbffa0874df426.gif)
 
-## Prerequisites
+## Requirements
 - gcloud
 - peco
 
